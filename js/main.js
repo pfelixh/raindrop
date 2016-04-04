@@ -210,14 +210,14 @@ $(document).ready(function() {
 			}
 		}
 
-	// Decide between three columns randomly (values css left pixels)
+	// Return column
 		function column() {
 			var values = [60 , 440, 820];
 			valueToUse = values[Math.floor(Math.random() * values.length)];
 		   	return valueToUse;
 		}
 
-	// Image insert loop
+	// Main
 		(function loop() {
 		    var rand = Math.round(Math.random() * (15000 - 5000)) + 2000;
 		    setTimeout(function() {
